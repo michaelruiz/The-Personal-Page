@@ -44,5 +44,5 @@ v1.1
 — Added responsive design for mobile devices
 — Mobile devices no longer load the background image to save the bandwidth and performance hit.
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b80754c-277f-4f05-b266-10b6a1eb47aa/deploy-status)](https://app.netlify.com/sites/michaelruiz/deploys)
 
