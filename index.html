@@ -47,17 +47,28 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.backstretch.min.js"></script>
 <script type="text/javascript">
-$(function(){
-     $(window).resize(function(){
-         if($(this).width() >= 767){
-             $.backstretch([
-		     "/1.png"
+	
+	// Preload the images
+        var images = [
+              "/1.png"
 		     ,"/2.png"
 		     ,"/3.png"
 		     ,"/4.png"
 		     ,"/5.png"
 		     ,"/6.png"
-	     ], {duration: 4000, fade: 750});
+          ];
+
+        // A little script for preloading all of the images
+        // It"s not necessary, but generally a good idea
+        $(images).each(function(){
+            $("<img/>")[0].src = this;
+        });
+
+	
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch(images, {duration: 4000, fade: 750});
          }
       })
       .resize();//trigger resize on page load
