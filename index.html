@@ -50,7 +50,7 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $(".foo").backstretch(["1.png","2.png","3.png","4.png","5.png","6.png"], {duration: 2000});
+             $(this).backstretch(["1.png","2.png","3.png","4.png","5.png","6.png"], {duration: 2000});
          }
       })
       .resize();//trigger resize on page load
