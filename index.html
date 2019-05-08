@@ -68,7 +68,14 @@
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
-             $(".foo").backstretch(images, {duration: 4000});
+             $.backstretch(
+              "/1.png"
+		     ,"/2.png"
+		     ,"/3.png"
+		     ,"/4.png"
+		     ,"/5.png"
+		     ,"/6.png"
+          , {duration: 4000});
          }
       })
       .resize();//trigger resize on page load
