@@ -48,23 +48,6 @@
 <script type="text/javascript" src="jquery.backstretch.min.js"></script>
 <script type="text/javascript">
 	
-	// Preload the images
-        var images = [
-              "/1.png"
-		     ,"/2.png"
-		     ,"/3.png"
-		     ,"/4.png"
-		     ,"/5.png"
-		     ,"/6.png"
-          ];
-
-        // A little script for preloading all of the images
-        // It"s not necessary, but generally a good idea
-        $(images).each(function(){
-            $("<img/>")[0].src = this;
-        });
-
-	
 $(function(){
      $(window).resize(function(){
          if($(this).width() >= 767){
